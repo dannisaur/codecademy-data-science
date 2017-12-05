@@ -118,3 +118,31 @@ plt.show()
 
 # Figures
 
+word_length = [8, 11, 12, 11, 13, 12, 9, 9, 7, 9]
+power_generated = [753.9, 768.8, 780.1, 763.7, 788.5, 782, 787.2, 806.4, 806.2, 798.9]
+years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009]
+
+plt.close('all')
+
+plt.figure()
+plt.plot(years, word_length)
+plt.savefig('winning_word_lengths.png')
+
+plt.figure(figsize=(7, 3))
+plt.plot(years, power_generated)
+plt.savefig('power_generated.png')
+
+# Review
+
+x = [1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009]
+y1 = [2, 2, 2, 3, 1, 1, 2, 3, 4, 1, 4]
+y2 = [109, 102, 102, 98, 85, 95, 96, 98, 124, 94, 102]
+
+plt.plot(x, y1, color = 'pink', marker = "o")
+plt.plot(x, y2, color = 'gray', marker = "o")
+plt.title("Two Lines on One Graph")
+plt.xlabel("Amazing X-axis")
+plt.ylabel("Incredible Y-axis")
+plt.legend(["Nicholas Cage Films", "Deaths by Drowning"], loc=7)
+
+plt.show()
